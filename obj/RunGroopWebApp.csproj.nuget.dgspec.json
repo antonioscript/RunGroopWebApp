@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Antônio Jr\\Desktop\\.NET\\200 - ASP.NET\\2 - MVC\\RunGroopWebApp\\RunGroopWebApp.csproj": {}
+    "C:\\Users\\Antônio Jr\\Documents\\GitHub\\RunGroopWebApp\\RunGroopWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Antônio Jr\\Desktop\\.NET\\200 - ASP.NET\\2 - MVC\\RunGroopWebApp\\RunGroopWebApp.csproj": {
+    "C:\\Users\\Antônio Jr\\Documents\\GitHub\\RunGroopWebApp\\RunGroopWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Antônio Jr\\Desktop\\.NET\\200 - ASP.NET\\2 - MVC\\RunGroopWebApp\\RunGroopWebApp.csproj",
+        "projectUniqueName": "C:\\Users\\Antônio Jr\\Documents\\GitHub\\RunGroopWebApp\\RunGroopWebApp.csproj",
         "projectName": "RunGroopWebApp",
-        "projectPath": "C:\\Users\\Antônio Jr\\Desktop\\.NET\\200 - ASP.NET\\2 - MVC\\RunGroopWebApp\\RunGroopWebApp.csproj",
+        "projectPath": "C:\\Users\\Antônio Jr\\Documents\\GitHub\\RunGroopWebApp\\RunGroopWebApp.csproj",
         "packagesPath": "C:\\Users\\Antônio Jr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Antônio Jr\\Desktop\\.NET\\200 - ASP.NET\\2 - MVC\\RunGroopWebApp\\obj\\",
+        "outputPath": "C:\\Users\\Antônio Jr\\Documents\\GitHub\\RunGroopWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Antônio Jr\\AppData\\Roaming\\NuGet\\NuGet.Config"
