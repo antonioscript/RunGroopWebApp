@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Antônio Jr\\Desktop\\.NET\\200 - ASP.NET\\2 - MVC\\RunGroopWebApp\\RunGroopWebApp.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Antônio Jr\\Desktop\\.NET\\200 - ASP.NET\\2 - MVC\\RunGroopWebApp\\RunGroopWebApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Antônio Jr\\Desktop\\.NET\\200 - ASP.NET\\2 - MVC\\RunGroopWebApp\\RunGroopWebApp.csproj",
+        "projectName": "RunGroopWebApp",
+        "projectPath": "C:\\Users\\Antônio Jr\\Desktop\\.NET\\200 - ASP.NET\\2 - MVC\\RunGroopWebApp\\RunGroopWebApp.csproj",
+        "packagesPath": "C:\\Users\\Antônio Jr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Antônio Jr\\Desktop\\.NET\\200 - ASP.NET\\2 - MVC\\RunGroopWebApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Antônio Jr\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
