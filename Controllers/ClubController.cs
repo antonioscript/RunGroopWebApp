@@ -15,10 +15,11 @@ namespace RunGroopWebApp.Controllers
             _clubRepository = clubRepository;
         }
 
-        public async Task<IActionResult> Index() //CCCCC
+        //Página Principal que  lista todos os clubs
+        public async Task<IActionResult> Index()
         {
             IEnumerable<Club> clubs = await _clubRepository.GetAll();
-            return View(clubs); //VVVV
+            return View(clubs);
         }
 
         //Página de Detalhes
@@ -28,6 +29,23 @@ namespace RunGroopWebApp.Controllers
             return View(club);
         }
 
+        //Página de Criação de novos clubs
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        //Postagem (Aqui é responsável pelo método de criação dos clubs)
+        [HttpPost]
+        public async Task<IActionResult> Create(Club club)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(club);
+            }
+            _clubRepository.Add(club);
+            return RedirectToAction("Index");
+        }
         
     }
 }

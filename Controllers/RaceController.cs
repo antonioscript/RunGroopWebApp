@@ -26,5 +26,23 @@ namespace RunGroopWebApp.Controllers
             Race race = await _raceRepository.GetByIdAsync(id);
             return View(race);
         }
+
+        //Página de Criação de novas corridas
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        //Postagem (Aqui é responsável pelo método de criação de novas corridas)
+        [HttpPost]
+        public async Task<IActionResult> Create(Race race)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(race);
+            }
+            _raceRepository.Add(race);
+            return RedirectToAction("Index");
+        }
     }
 }
