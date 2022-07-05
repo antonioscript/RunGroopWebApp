@@ -1,18 +1,31 @@
 using Microsoft.EntityFrameworkCore;
 using RunGroopWebApp.Models;
 using RunGroopWebApp.Data;
+using RunGroopWebApp.Repository;
+using RunGroopWebApp.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//Adicionado após a criação dos repositórios e da interface
+//---------------------------------------------------------------
+builder.Services.AddScoped<IClubRepository, ClubRepository>();
+builder.Services.AddScoped<IRaceRepository, RaceRepository>();
+//-----------------------------------------------------
+
+//Adicionado
 //========================================================
 builder.Services.AddDbContext<ApplicationDbContext>(options => 
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 //============================================================
+
 var app = builder.Build();
+
+//Adicionado
 //===============================================
 if (args.Length == 1 && args[0].ToLower() == "seeddata")
 {

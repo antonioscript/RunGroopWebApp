@@ -1,29 +1,30 @@
 using Microsoft.AspNetCore.Mvc;
 using RunGroopWebApp.Data;
 using RunGroopWebApp.Models;
+using RunGroopWebApp.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace RunGroopWebApp.Controllers
 {
     public class ClubController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IClubRepository _clubRepository;
 
-        public ClubController(ApplicationDbContext context)
+        public ClubController(IClubRepository clubRepository)
         {
-            _context = context;
+            _clubRepository = clubRepository;
         }
 
-        public IActionResult Index() //CCCCC
+        public async Task<IActionResult> Index() //CCCCC
         {
-            List<Club> clubs = _context.Clubs.ToList(); //MMMM
+            IEnumerable<Club> clubs = await _clubRepository.GetAll();
             return View(clubs); //VVVV
         }
 
         //Página de Detalhes
-        public IActionResult Detail(int id) 
+        public async Task<IActionResult> Detail(int id) 
         {
-            Club club = _context.Clubs.Include(a => a.Address).FirstOrDefault(c => c.Id == id);
+            Club club = await _clubRepository.GetByIdAsync(id);
             return View(club);
         }
 
