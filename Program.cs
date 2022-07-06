@@ -1,8 +1,13 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using RunGroopWebApp.Models;
 using RunGroopWebApp.Data;
-using RunGroopWebApp.Repository;
+using RunGroopWebApp.Helpers;
 using RunGroopWebApp.Interfaces;
+using RunGroopWebApp.Models;
+using RunGroopWebApp.Repository;
+using RunGroopWebApp.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +19,12 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IClubRepository, ClubRepository>();
 builder.Services.AddScoped<IRaceRepository, RaceRepository>();
 //-----------------------------------------------------
+
+//Adicionado PhotoUpolad
+//---------------------------------------------------------------
+builder.Services.AddScoped<IPhotoService, PhotoService>();
+builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
+//---------------------------------------------------------------
 
 //Adicionado
 //========================================================

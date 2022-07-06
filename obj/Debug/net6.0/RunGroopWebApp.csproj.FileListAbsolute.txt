@@ -120,3 +120,5 @@ C:\Users\Antônio Jr\Documents\GitHub\RunGroopWebApp\obj\Debug\net6.0\refint\Run
 C:\Users\Antônio Jr\Documents\GitHub\RunGroopWebApp\obj\Debug\net6.0\RunGroopWebApp.pdb
 C:\Users\Antônio Jr\Documents\GitHub\RunGroopWebApp\obj\Debug\net6.0\RunGroopWebApp.genruntimeconfig.cache
 C:\Users\Antônio Jr\Documents\GitHub\RunGroopWebApp\obj\Debug\net6.0\ref\RunGroopWebApp.dll
+C:\Users\Antônio Jr\Documents\GitHub\RunGroopWebApp\bin\Debug\net6.0\CloudinaryDotNet.dll
+C:\Users\Antônio Jr\Documents\GitHub\RunGroopWebApp\bin\Debug\net6.0\Newtonsoft.Json.dll
