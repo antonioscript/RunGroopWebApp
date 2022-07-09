@@ -8,61 +8,61 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RunGroopWebApp
 build_property.RootNamespace = RunGroopWebApp
-build_property.ProjectDir = c:\Users\Antônio Jr\Documents\GitHub\RunGroopWebApp\
+build_property.ProjectDir = C:\Users\Antônio Jr\Documents\GitHub\RunGroopWebApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\Antônio Jr\Documents\GitHub\RunGroopWebApp
+build_property.MSBuildProjectDirectory = C:\Users\Antônio Jr\Documents\GitHub\RunGroopWebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Club/Create.cshtml]
+[C:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Club/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2x1YlxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Club/Detail.cshtml]
+[C:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Club/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2x1YlxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Club/Index.cshtml]
+[C:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Club/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2x1YlxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Home/Index.cshtml]
+[C:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Home/Privacy.cshtml]
+[C:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Race/Create.cshtml]
+[C:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Race/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFjZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Race/Detail.cshtml]
+[C:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Race/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFjZVxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Race/Index.cshtml]
+[C:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Race/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFjZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Shared/Error.cshtml]
+[C:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/_ViewImports.cshtml]
+[C:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/_ViewStart.cshtml]
+[C:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Shared/_Layout.cshtml]
+[C:/Users/Antônio Jr/Documents/GitHub/RunGroopWebApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-m3mqv5x1lx
