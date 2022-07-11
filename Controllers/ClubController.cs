@@ -1,11 +1,9 @@
-using System.Runtime.Intrinsics.X86;
-using System.Reflection;
 using Microsoft.AspNetCore.Mvc;
-using RunGroopWebApp.Data;
-using RunGroopWebApp.Models;
+using RunGroopWebApp.Data.Enum;
+using RunGroopWebApp.Helpers;
 using RunGroopWebApp.Interfaces;
-using RunGroopWebApp.ViewModels; 
-using Microsoft.EntityFrameworkCore;
+using RunGroopWebApp.Models;
+using RunGroopWebApp.ViewModels;
 
 namespace RunGroopWebApp.Controllers
 {
@@ -70,6 +68,50 @@ namespace RunGroopWebApp.Controllers
 
             return View(clubVM);
         }
-        
+
+        //Página de Editar
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, EditClubViewModel clubVM)
+        {
+            if (!ModelState.IsValid)
+            {
+                ModelState.AddModelError("", "Failed to edit club");
+                return View("Edit", clubVM);
+            }
+
+            var userClub = await _clubRepository.GetByIdAsyncNoTracking(id);
+
+            if (userClub == null)
+            {
+                return View("Error");
+            }
+
+            var photoResult = await _photoService.AddPhotoAsync(clubVM.Image);
+
+            if (photoResult.Error != null)
+            {
+                ModelState.AddModelError("Image", "Photo upload failed");
+                return View(clubVM);
+            }
+
+            if (!string.IsNullOrEmpty(userClub.Image))
+            {
+                _ = _photoService.DeletePhotoAsync(userClub.Image);
+            }
+
+            var club = new Club
+            {
+                Id = id,
+                Title = clubVM.Title,
+                Description = clubVM.Description,
+                Image = photoResult.Url.ToString(),
+                AddressId = clubVM.AddressId,
+                Address = clubVM.Address,
+            };
+
+            _clubRepository.Update(club);
+
+            return RedirectToAction("Index");
+        }
     }
 }
