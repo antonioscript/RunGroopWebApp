@@ -9,6 +9,8 @@ namespace RunGroopWebApp.Interfaces
 
         Task<Race> GetByIdAsync(int id); //Pega os clubs de acordo com o Id
 
+        Task<Race> GetByIdAsyncNoTracking(int id);
+
         Task<IEnumerable<Race>> GetAllRacesByCity(string city); 
 
         bool Add(Race race);
