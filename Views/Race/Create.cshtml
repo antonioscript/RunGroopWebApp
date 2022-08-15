@@ -4,43 +4,43 @@
 
 <form method="post" asp-action="Create" enctype="multipart/form-data">
   <div class="form-group">
-    <label asp-for="Title">Title</label>
-    <input asp-for="Title" class="form-control" placeholder="Title">
+    <label asp-for="Title">Título</label>
+    <input asp-for="Title" class="form-control" placeholder="Título">
     <span asp-validation-for="Title" class="text-danger"></span>
   </div>
   <div class="form-group">
-    <label asp-for="Description">Description</label>
-    <input asp-for="Description" class="form-control" placeholder="Description">
+    <label asp-for="Description">Descrição</label>
+    <input asp-for="Description" class="form-control" placeholder="Descrição">
     <span asp-validation-for="Description" class="text-danger"></span>
   </div>
   <div class="form-group">
-    <label asp-for="RaceCategory">Race Category</label>
+    <label asp-for="RaceCategory">Categoria</label>
     <select asp-for="RaceCategory" asp-items="@Html.GetEnumSelectList<RaceCategory>()" class="form-control form-control-lg">
-                <option>--Select---</option>
+                <option>--Selecione---</option>
     </select>
     <span asp-validation-for="RaceCategory" class="text-danger"></span>
   </div>
   <div class="form-group">
-    <label asp-for="Address.Street">Street</label>
+    <label asp-for="Address.Street">Rua</label>
     <input asp-for="Address.Street" class="form-control" placeholder="Street">
     <span asp-validation-for="Address.Street" class="text-danger"></span>
   </div>
   <div class="form-group">
-    <label asp-for="Address.City">City</label>
-    <input asp-for="Address.City" class="form-control" placeholder="City">
+    <label asp-for="Address.City">Cidade</label>
+    <input asp-for="Address.City" class="form-control" placeholder="Cidade">
     <span asp-validation-for="Address.City" class="text-danger"></span>
   </div>
   <div class="form-group">
-    <label asp-for="Address.State">State</label>
-    <input asp-for="Address.State" class="form-control" placeholder="State">
+    <label asp-for="Address.State">Estado</label>
+    <input asp-for="Address.State" class="form-control" placeholder="Estado">
     <span asp-validation-for="Address.State" class="text-danger"></span>
   </div>
   <div class="form-group">
-    <label asp-for="Image">Image</label>
-    <input asp-for="Image" type="file" class="form-control" placeholder="Image">
+    <label asp-for="Image">Imagem</label>
+    <input asp-for="Image" type="file" class="form-control" placeholder="Imagem">
     <span asp-validation-for="Image" class="text-danger"></span>
   </div>
   
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Enviar</button>
 </form>

@@ -48,7 +48,7 @@ namespace RunGroopWebApp.Controllers
             {
                 //return View(club);
                 var result = await _photoService.AddPhotoAsync(clubVM.Image);
-                var club = new Club
+                var club = new Club()
                 {
                     Title = clubVM.Title,
                     Description = clubVM.Description,
