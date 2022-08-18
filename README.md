@@ -9,6 +9,8 @@ Trata-se de um software que apresenta grupos de corridas e maratonas para corred
 - .NET 6
 - ASP .NET Core (Modelo MVC)
 - Razor Pages
+- Data Transfer Object (DTO)
+- AutoMapper
 - Entity Framework Core
 - Banco de Dados SQL Server
 
