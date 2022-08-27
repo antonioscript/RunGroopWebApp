@@ -1,0 +1,11 @@
+*IdentyFrameworkOFC
+1 - Adicionamos o Pacote "Microsoft.AspNetCore.Identity.EntityFrameworkCore""
+2 - Herdamos na nossa classe AppUSer o "IdentyFramework"
+3 - Adicionamos uma migração
+4 - Atualizamos o banco de dados
+5 - Atualizamos o arquivo "Seed"
+6 - Adicionamos um classe chamada "UserRolses" dento de Data
+7 - Injetamos o Identity dentro de Program.cs
+8 - No terminal o seguinte código "dotnet run seeddata"
+
+
