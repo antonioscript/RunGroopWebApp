@@ -8,5 +8,7 @@
 7 - Injetamos o Identity dentro de Program.cs
 8 - No terminal o seguinte código "dotnet run seeddata"
 
-
-image.png
+*Dashboard_1+
+1 - Colocamos "app.UseAuthentication();" dentro de Program.cs
+2 - Entramos dentro de Layout e fazemos algumas modificações
+3 - Fizemos modificações no "Index.cshtml" do Club e Race
