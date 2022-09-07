@@ -16298,6 +16298,11 @@
   "RootNamespace": "RunGroopWebApp",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Antônio Jr\\Documents\\GitHub\\RunGroopWebApp\\Views\\Account\\Register.cshtml",
+      "TargetPath": "Views\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Antônio Jr\\Documents\\GitHub\\RunGroopWebApp\\Views\\Club\\Delete.cshtml",
       "TargetPath": "Views\\Club\\Delete.cshtml",
       "FileKind": "mvc"
