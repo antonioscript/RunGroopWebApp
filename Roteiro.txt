@@ -9,3 +9,4 @@
 8 - No terminal o seguinte código "dotnet run seeddata"
 
 
+image.png
