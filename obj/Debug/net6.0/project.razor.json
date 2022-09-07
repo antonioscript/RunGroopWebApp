@@ -16353,6 +16353,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Antônio Jr\\Documents\\GitHub\\RunGroopWebApp\\Views\\Dashboard\\Index.cshtml",
+      "TargetPath": "Views\\Dashboard\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Antônio Jr\\Documents\\GitHub\\RunGroopWebApp\\Views\\Club\\Edit.cshtml",
       "TargetPath": "Views\\Club\\Edit.cshtml",
       "FileKind": "mvc"
