@@ -125,14 +125,14 @@ namespace RunGroopWebApp.Data
 
         //         //Users
         //         var userManager = serviceScope.ServiceProvider.GetRequiredService<UserManager<AppUser>>();
-        //         string adminUserEmail = "teddysmithdeveloper@gmail.com";
+        //         string adminUserEmail = "antonioadm@gmail.com";
 
         //         var adminUser = await userManager.FindByEmailAsync(adminUserEmail);
         //         if (adminUser == null)
         //         {
         //             var newAdminUser = new AppUser()
         //             {
-        //                 UserName = "teddysmithdev",
+        //                 UserName = "antonioadm",
         //                 Email = adminUserEmail,
         //                 EmailConfirmed = true,
         //                 Address = new Address()

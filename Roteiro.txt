@@ -1,0 +1,4 @@
++_Identity_Framework
+1 - Fizemos modificações no Model/AppUser
+2 - Criamos maus uma tabela no ApplicationDbContext
+3 - 
