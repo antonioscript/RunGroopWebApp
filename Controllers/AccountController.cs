@@ -26,7 +26,8 @@ namespace RunGroopWebApp.Controllers
             var response = new LoginViewModel();
             return View(response);
         }
-
+        
+        //LOGIN
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel loginViewModel)
         {
@@ -55,5 +56,48 @@ namespace RunGroopWebApp.Controllers
             TempData["Error"] = "Usuário não encotrado. Por favor, tente novamente ";
             return View(loginViewModel);
         }
+
+        [HttpGet]
+        public IActionResult Register()
+        {
+            var response = new RegisterViewModel();
+            return View(response);
+        }
+
+        //REGISTRO
+        [HttpPost]
+        public async Task<IActionResult> Register(RegisterViewModel registerViewModel)
+        {
+            if (!ModelState.IsValid) return View(registerViewModel);
+
+            var user = await _userManager.FindByEmailAsync(registerViewModel.EmailAddress);
+            if (user != null)
+            {
+                TempData["Error"] = "This email address is already in use";
+                return View(registerViewModel);
+            }
+
+            var newUser = new AppUser()
+            {
+                Email = registerViewModel.EmailAddress,
+                UserName = registerViewModel.EmailAddress
+            };
+            var newUserResponse = await _userManager.CreateAsync(newUser, registerViewModel.Password);
+
+            if (newUserResponse.Succeeded)
+                await _userManager.AddToRoleAsync(newUser, UserRoles.User);
+
+            // return RedirectToAction("Index", "Race");
+            return RedirectToAction("Index", "Race");
+        }
+
+        //POST
+        [HttpGet]
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Race");
+        }
+
     }
 }

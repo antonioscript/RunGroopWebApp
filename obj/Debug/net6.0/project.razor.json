@@ -16343,6 +16343,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Antônio Jr\\Documents\\GitHub\\RunGroopWebApp\\Views\\Account\\Register.cshtml",
+      "TargetPath": "Views\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Antônio Jr\\Documents\\GitHub\\RunGroopWebApp\\Views\\Race\\Index.cshtml",
       "TargetPath": "Views\\Race\\Index.cshtml",
       "FileKind": "mvc"
