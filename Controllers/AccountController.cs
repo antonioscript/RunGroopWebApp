@@ -87,7 +87,6 @@ namespace RunGroopWebApp.Controllers
             if (newUserResponse.Succeeded)
                 await _userManager.AddToRoleAsync(newUser, UserRoles.User);
 
-            // return RedirectToAction("Index", "Race");
             return RedirectToAction("Index", "Race");
         }
 
