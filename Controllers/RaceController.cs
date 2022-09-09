@@ -11,11 +11,13 @@ namespace RunGroopWebApp.Controllers
     {
         private readonly IRaceRepository _raceRepository;
         private readonly IPhotoService _photoService;
+        private readonly IHttpContextAcessor _htttpContextAcessor;
 
-        public RaceController(IRaceRepository raceRepository, IPhotoService photoService)
+        public RaceController(IRaceRepository raceRepository, IPhotoService photoService, IHttpContextAcessor htttpContextAcessor)
         {
             _raceRepository = raceRepository;
-             _photoService = photoService;
+            _photoService = photoService;
+            _htttpContextAcessor = htttpContextAcessor;
         }
 
         public async Task<IActionResult> Index() 
@@ -33,7 +35,9 @@ namespace RunGroopWebApp.Controllers
         //Página de Criação de novas corridas
         public IActionResult Create()
         {
-            return View();
+            var curUserId = _htttpContextAcessor.HttpContext.User.GetUserId();
+            var createClubViewModel = new CreateClubViewModel { AppUserId = curUserId };
+            return View(createClubViewModel);
         }
 
         //Postagem (Aqui é responsável pelo método de criação de novas corridas)
@@ -50,6 +54,7 @@ namespace RunGroopWebApp.Controllers
                     Title = raceVM.Title,
                     Description = raceVM.Description,
                     Image = result.Url.ToString(),
+                    AppUserId = raceVM.AppUserId,
                     Address = new Address
                     {
                         Street = raceVM.Address.Street,

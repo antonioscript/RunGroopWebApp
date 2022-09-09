@@ -13,11 +13,13 @@ namespace RunGroopWebApp.Controllers
     {
         private readonly IClubRepository _clubRepository;
         private readonly IPhotoService _photoService;
+        private readonly IHttpContextAcessor _htttpContextAcessor;
 
-        public ClubController(IClubRepository clubRepository, IPhotoService photoService)
+        public ClubController(IClubRepository clubRepository, IPhotoService photoService, IHttpContextAcessor htttpContextAcessor)
         {
             _clubRepository = clubRepository;
             _photoService = photoService;
+            _htttpContextAcessor = htttpContextAcessor;
         }
 
         //Página Principal que  lista todos os clubs
@@ -37,7 +39,9 @@ namespace RunGroopWebApp.Controllers
         //Página de Criação de novos clubs
         public IActionResult Create()
         {
-            return View();
+            var curUserId = _htttpContextAcessor.HttpContext.User.GetUserId();
+            var createClubViewModel = new CreateClubViewModel { AppUserId = curUserId };
+            return View(createClubViewModel);
         }
 
         //Postagem (Aqui é responsável pelo método de criação dos clubs)
@@ -53,6 +57,7 @@ namespace RunGroopWebApp.Controllers
                     Title = clubVM.Title,
                     Description = clubVM.Description,
                     Image = result.Url.ToString(),
+                    AppUserId = clubVM.AppUserId,
                     Address = new Address
                     {
                         Street = clubVM.Address.Street,
